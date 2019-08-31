@@ -1,0 +1,28 @@
+{
+  "name": "terdia/currency-util",
+  "description": "A simple library to lookup the currency symbol for a given currency code.",
+  "keywords": ["currency", "mapping", "php currency map"],
+  "license": "MIT",
+  "type": "library",
+
+  "authors": [
+    {
+      "name": "terdia",
+      "email":"support@devscreencast.com",
+      "homepage": "https://devscreencast.com"
+    }
+  ],
+
+  "require": {
+    "php" : ">=7.0"
+  },
+
+  "autoload": {
+    "psr-4": {
+      "Currency\\Util\\":"src/"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7.5"
+  }
+}
