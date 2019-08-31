@@ -14,10 +14,10 @@ composer req terdia/currency-util
 ```php
 use Currency\Util\CurrencySymbolUtil;
 
-getSymbol('GBP') //=> '£'
-getSymbol('EUR') //=> '€'
-getSymbol('USD') //=> '$'
-getSymbol('NOT A VALID CODE') throw InvalidArgumentException
+CurrencySymbolUtil::getSymbol('GBP') //=> '£'
+CurrencySymbolUtil::getSymbol('EUR') //=> '€'
+CurrencySymbolUtil::getSymbol('USD') //=> '$'
+CurrencySymbolUtil::getSymbol('NOT A VALID CODE') throw InvalidArgumentException
 ```
 
 ### Get List of supported  currency code
