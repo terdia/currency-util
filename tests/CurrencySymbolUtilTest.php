@@ -1,5 +1,8 @@
 <?php declare(strict_types=1);
 
+namespace Currency\Util\Tests;
+
+use InvalidArgumentException;
 use PHPUnit\Framework\TestCase;
 use Currency\Util\CurrencySymbolUtil;
 use Currency\Util\CurrencySymbolMapping;
@@ -21,7 +24,7 @@ class CurrencySymbolUtilTest extends TestCase
 
         CurrencySymbolUtil::getSymbol(self::INVALID);
     }
-    
+
     public function testAllValuesInCurrencySymbolMappingIsOk()
     {
        $currencies = array_keys(CurrencySymbolMapping::values());
